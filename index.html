@@ -1,0 +1,59 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="download_pic" download="selfie.jpg"></a>
+        <h1>Voice Selfie App 
+        <span><img id="logo_img" src="selfie.jpeg"></span>
+        </h1>
+        <hr>
+        <h4 style="color:red;">Press Allow as soon as popup shows up.</h4>
+        
+        <div class="form-group">
+            <h3>Say "take my selfie" after you press the Start button</h3>
+            <br>
+         <div><button onclick="start();" class="btn btn-info" >Start</button></div>
+         <br>
+         <br>
+            <label>Your voice output : </label>
+        </div>
+        <textarea id="textbox"></textarea>
+        <br>
+        <br>
+        <br>
+        <label>Your webcam : </label>
+        <br>
+        <div class="container" id="camera"></div>
+        <br>
+        <br>
+        <br>
+        <label>Your selfie Will Display Here: </label>
+        <br>
+        <div id="resultRow"></div>
+        <div id="result1">
+            <img src="download1.jpg">
+        </div>
+      <span><div id="result2">
+            <img src="download.jpg">
+        </div></span>
+     <span><div id="result3">
+        <img src="download2.jpg">
+    </div></span>
+        </div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
